@@ -1,0 +1,29 @@
+/**
+ * Group an array of objects by key.
+ *
+ * @param      {Array}   list      The source array
+ * @param      {String}  key       The property to group by; its values become keys in the output object
+ * @param      {String}  property  The property to group into an array
+ * @return     {Object}            Object with grouped objects as an array
+ */
+export const groupBy = <T>(list: Record<string, T>[], group: string, property: string): Record<string, T[]> =>
+  list.reduce((acc, item) => {
+    const key = item[group].toString();
+    if (!acc[key]) acc[key] = [];
+    acc[key].push(item[property]);
+    return acc;
+  }, {} as Record<string, T[]>);
+
+/**
+ * Group an array of objects by a specified key property and then
+ * determine the maximum value of a given property for each value of the key.
+ *
+ * @param      {Array}   list      The array of objects to be summarized
+ * @param      {String}  key       The name of a property to group by
+ * @param      {String}  property  The name of a numeric property to summarize
+ * @return     {Array}             Array of maximum values for each value of the key property
+ */
+export const maxByKey = (list: Record<string, number>[], key: string, property: string): Array<number> => {
+  const groups = groupBy<number>(list, key, property);
+  return Object.keys(groups).map((k) => groups[k].reduce((acc, item) => Math.max(acc, item), 0));
+};

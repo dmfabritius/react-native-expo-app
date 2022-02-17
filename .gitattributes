@@ -1,0 +1,9 @@
+# https://docs.github.com/en/github/using-git/configuring-git-to-handle-line-endings#per-repository-settings
+
+# for best cross-platform experience, set vscode preferences to use lf as the default line ending
+# and force git to treat source code files as having lf (\n) line endings and not crlf (\r\n) line endings
+*.js text eol=lf
+*.ts text eol=lf
+*.jsx text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf

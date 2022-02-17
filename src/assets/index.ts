@@ -1,0 +1,41 @@
+import { ImageRequireSource } from 'react-native';
+
+export const images = {
+  battery1: require('./images/battery1.png'),
+  battery2: require('./images/battery2.png'),
+  battery3: require('./images/battery3.png'),
+  battery4: require('./images/battery4.png'),
+  battery5: require('./images/battery5.png'),
+  battery6: require('./images/battery6.png'),
+  batterynodata: require('./images/batterynodata.png'),
+  calendar: require('./images/calendar.png'),
+  connection: require('./images/connection.png'),
+  delete: require('./images/delete.png'),
+  logo_horz: require('./images/logo_horz.png'),
+  logo_vert: require('./images/logo_vert.png'),
+  noconnection: require('./images/noconnection.png'),
+  rain_drop: require('./images/rain_drop.png'),
+  thermometer: require('./images/thermometer.png'),
+  windy: require('./images/windy.png'),
+};
+
+export const weatherIcons: Record<string, ImageRequireSource> = {
+  '01d': require(`./images/weather/01d.png`),
+  '01n': require(`./images/weather/01n.png`),
+  '02d': require(`./images/weather/02d.png`),
+  '02n': require(`./images/weather/02n.png`),
+  '03d': require(`./images/weather/03d.png`),
+  '03n': require(`./images/weather/03n.png`),
+  '04d': require(`./images/weather/04d.png`),
+  '04n': require(`./images/weather/04n.png`),
+  '09d': require(`./images/weather/09d.png`),
+  '09n': require(`./images/weather/09n.png`),
+  '10d': require(`./images/weather/10d.png`),
+  '10n': require(`./images/weather/10n.png`),
+  '11d': require(`./images/weather/11d.png`),
+  '11n': require(`./images/weather/11n.png`),
+  '13d': require(`./images/weather/13d.png`),
+  '13n': require(`./images/weather/13n.png`),
+  '50d': require(`./images/weather/50d.png`),
+  '50n': require(`./images/weather/50n.png`),
+};

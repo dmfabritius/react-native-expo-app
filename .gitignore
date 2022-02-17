@@ -1,0 +1,20 @@
+node_modules/**/*
+.expo/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+.idea/
+src/.idea/*
+package-lock.json
+coverage/**/*
+yarn-error.log
+firebase.config.js
+openweather.config.js
+
+# macOS
+.DS_Store
